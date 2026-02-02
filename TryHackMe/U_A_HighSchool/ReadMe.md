@@ -1,20 +1,20 @@
-U.A. High School — TryHackMe
-Sanitized Write-Up (Public Version)
+**U.A. High School — TryHackMe**
+**Sanitized Write-Up (Public Version)**
 
-NOTE:
+**NOTE:**
 This write-up is shared for educational purposes only.
 Sensitive values, flags, and exact secrets have been redacted in accordance with TryHackMe guidelines.
 
 --------------------------------------------------
 
-Overview
+**Overview**
 
 This room focuses on web enumeration, remote code execution, steganography, and Linux privilege escalation.
 The objective was to gain initial access, escalate privileges, and obtain both user-level and root-level access.
 
 --------------------------------------------------
 
-Enumeration
+**Enumeration**
 
 - Identified the target IP address provided by the lab
 - Conducted a port scan using Nmap to discover exposed services
@@ -24,7 +24,7 @@ Enumeration
 
 --------------------------------------------------
 
-Web Exploitation
+**Web Exploitation**
 
 - Identified an endpoint that accepted user-controlled parameters
 - Performed parameter fuzzing and discovered a vulnerable parameter
@@ -35,7 +35,7 @@ Web Exploitation
 
 --------------------------------------------------
 
-Post-Exploitation
+**Post-Exploitation**
 
 - Enumerated the filesystem for useful artifacts
 - Discovered an encoded passphrase file
@@ -48,7 +48,7 @@ Post-Exploitation
 
 --------------------------------------------------
 
-User Access
+**User Access**
 
 - Logged in via SSH using the extracted user credentials
 - Successfully obtained the user flag:
@@ -56,7 +56,7 @@ User Access
 
 --------------------------------------------------
 
-Privilege Escalation
+**Privilege Escalation**
 
 - Enumerated sudo permissions
 - Identified a script executable with elevated privileges
@@ -70,7 +70,7 @@ Privilege Escalation
 
 --------------------------------------------------
 
-Skills Demonstrated
+**Skills Demonstrated**
 
 - Web service enumeration
 - Directory and parameter fuzzing
@@ -83,7 +83,7 @@ Skills Demonstrated
 
 --------------------------------------------------
 
-Disclaimer
+**Disclaimer**
 
 This write-up does not include flags, passwords, or direct solutions.
 It is intended to demonstrate methodology and learning outcomes only.
